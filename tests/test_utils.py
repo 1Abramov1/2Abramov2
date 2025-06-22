@@ -1,8 +1,13 @@
-import unittest
-from unittest.mock import mock_open, patch, MagicMock
 import json
+import unittest
 from typing import List
-from src.utils import Product, Category, load_data_from_json
+from unittest.mock import MagicMock
+from unittest.mock import mock_open
+from unittest.mock import patch
+
+from src.utils import Category
+from src.utils import Product
+from src.utils import load_data_from_json
 
 
 class TestLoadDataFromJson(unittest.TestCase):
