@@ -1,4 +1,8 @@
 from src.product import Product
+from typing import List, TypeVar
+
+# Предположим, что Product - это класс продукта
+T = TypeVar('T', bound='Product')
 
 
 class Category:
@@ -38,5 +42,9 @@ class Category:
         return f"Category('{self.name}', товаров: {len(self.__products)})"
 
     @property
-    def products(self) -> list[Product]:
-        return self.__products.copy()
+    def products(self) -> List[Product]:
+        return self.__products
+
+    @products.setter
+    def products(self, value: List[Product]) -> None:
+        self.__products = value

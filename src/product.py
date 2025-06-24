@@ -1,3 +1,8 @@
+from typing import List, TypeVar, Type, Any
+
+T = TypeVar('T', bound='Product')  # Предполагается, что это метод класса Product
+
+
 class Product:
     def __init__(self, name: str, description: str, price: float, quantity: int):
         """Инициализация продукта. Все параметры обязательны."""
@@ -31,10 +36,10 @@ class Product:
         self.__price = new_price
 
     @classmethod
-    def new_product(cls, products, **kwargs):
+    def new_product(cls: Type[T], products: List[T], **kwargs: Any) -> T:
         """Создает новый продукт или обновляет существующий с тем же именем."""
         for product in products:
-            if product.name == kwargs["name"]:
+            if isinstance(product, cls) and product.name == kwargs["name"]:
                 product.quantity += kwargs["quantity"]
                 if kwargs["price"] > product.price:  # Обновляем цену только если новая выше
                     product.price = kwargs["price"]

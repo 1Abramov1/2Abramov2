@@ -52,28 +52,42 @@ def test_add_product_to_non_empty_category(category_with_products: Category, sam
 
 
 def test_products_property_getter(category_with_products: Category, sample_product: Product) -> None:
-    """Тестирует геттер products на возврат копии списка."""
+    """Тестирует геттер products на возврат оригинального списка (без копии)."""
     products1 = category_with_products.products
     products2 = category_with_products.products
 
     assert products1 == products2  # Содержимое одинаковое
-    assert products1 is not products2  # Разные объекты
+    assert products1 is products2  # Это один и тот же объект (не копия)
     assert isinstance(products1, list)
     assert products1[0] == sample_product
 
 
-def test_products_property_returns_copy(category_with_products: Category) -> None:
-    """Тестирует, что property возвращает копию списка продуктов."""
-    products = category_with_products.products
-    original_length = len(products)
+def test_products_property_returns_original(category_with_products: Category) -> None:
+    """Тестирует, что property возвращает оригинальный список продуктов (не копию)."""
+    # Получаем список продуктов через property
+    products_reference = category_with_products.products
+    original_products = category_with_products._Category__products  # Получаем доступ к оригиналу
 
-    test_product = Product("Тестовый", "Продукт", 100.0, 1)
-    products.append(test_product)
+    # Проверяем, что это один и тот же объект
+    assert products_reference is original_products, "Геттер должен возвращать оригинальный список"
 
-    # Проверяем, что оригинал не изменился
-    assert len(category_with_products.products) == original_length
-    assert test_product not in category_with_products.products
-    assert products is not category_with_products.products
+    # Создаем тестовый продукт
+    test_product = Product(
+        name="Тестовый продукт",
+        description="Тестовое описание",
+        price=100.0,
+        quantity=1
+    )
+
+    # Запоминаем исходную длину
+    original_length = len(original_products)
+
+    # Изменяем полученный список
+    products_reference.append(test_product)
+
+    # Проверяем, что оригинальный список ИЗМЕНИЛСЯ
+    assert len(original_products) == original_length + 1, "Оригинальный список должен изменяться"
+    assert test_product in original_products, "Тестовый продукт должен появиться в оригинальном списке"
 
 
 @pytest.mark.parametrize(
