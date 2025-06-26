@@ -5,40 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e979a859-e269-4892-8723-af269a1ae029" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.coverage" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.flake8" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/PythonProject2.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/products.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/htmlcov/class_index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/htmlcov/coverage_html_cb_497bf287.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/htmlcov/favicon_32_cb_58284776.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/htmlcov/function_index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/htmlcov/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/htmlcov/keybd_closed_cb_ce680311.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/htmlcov/status.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/htmlcov/style_cb_db813965.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/htmlcov/z_145eef247bfb46b6___init___py.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/htmlcov/z_145eef247bfb46b6_category_py.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/htmlcov/z_145eef247bfb46b6_product_py.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/htmlcov/z_145eef247bfb46b6_utils_py.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/.githolder" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/category.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/product.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_category.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_product.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_utils.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pyproject.toml" beforeDir="false" afterPath="$PROJECT_DIR$/pyproject.toml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,35 +36,35 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python tests.Python tests for test_product.TestProductPrice.executor": "Run",
-    "Python tests.Python tests for test_product.TestProductPrice.test_price_getter.executor": "Run",
-    "Python tests.Python tests for test_utils.TestLoadDataFromJson.executor": "Run",
-    "Python tests.Python tests for test_utils.TestLoadDataFromJson.test_load_data_from_json_single_category_single_product.executor": "Run",
-    "Python tests.Python tests in test_product.py.executor": "Run",
-    "Python tests.Python tests in test_utils.py.executor": "Run",
-    "Python tests.pytest for test_category.test_add_product_error_message.executor": "Run",
-    "Python tests.pytest for test_category.test_add_product_invalid_type.executor": "Run",
-    "Python tests.pytest for test_category.test_add_product_to_empty_category.executor": "Run",
-    "Python tests.pytest for test_category.test_add_product_to_non_empty_category.executor": "Run",
-    "Python tests.pytest for test_category.test_price_property_reflects_private_attr_change.executor": "Run",
-    "Python tests.pytest for test_category.test_products_property_getter.executor": "Run",
-    "Python tests.pytest for test_category.test_products_property_returns_copy.executor": "Run",
-    "Python tests.pytest for test_category.test_products_property_returns_original.executor": "Run",
-    "Python tests.pytest for test_category.test_sample_product.executor": "Run",
-    "Python tests.pytest in test_category.py.executor": "Run",
-    "Python tests.pytest in test_product.py.executor": "Run",
-    "Python.main.executor": "Run",
-    "Python.test_category.executor": "Run",
-    "Python.utils.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "Merging main",
-    "last_opened_file_path": "C:/Users/New_Alexs/PycharmProjects/PythonProject2",
-    "settings.editor.selected.configurable": "preferences.keymap"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python tests.Python tests for test_product.TestProductPrice.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_product.TestProductPrice.test_price_getter.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_utils.TestLoadDataFromJson.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_utils.TestLoadDataFromJson.test_load_data_from_json_single_category_single_product.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in test_product.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in test_utils.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest for test_category.test_add_product_error_message.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest for test_category.test_add_product_invalid_type.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest for test_category.test_add_product_to_empty_category.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest for test_category.test_add_product_to_non_empty_category.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest for test_category.test_price_property_reflects_private_attr_change.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest for test_category.test_products_property_getter.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest for test_category.test_products_property_returns_copy.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest for test_category.test_products_property_returns_original.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest for test_category.test_sample_product.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest in test_category.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest in test_product.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;Python.test_category.executor&quot;: &quot;Run&quot;,
+    &quot;Python.utils.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Merging main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/New_Alexs/PycharmProjects/PythonProject2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Python.main">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="PythonProject2" />
