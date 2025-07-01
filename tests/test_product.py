@@ -81,6 +81,5 @@ class TestProductPrice(unittest.TestCase):
         self.assertAlmostEqual(total, 30.5 * 2 + 10 * 3)
 
 
-
 if __name__ == "__main__":
     unittest.main()
