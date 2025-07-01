@@ -13,7 +13,7 @@ class Category:
 
         :return: Количество уникальных товаров.
         """
-        return len(self.products)
+        return len(self.__products)
 
     # Атрибуты класса (общие для всех объектов)
     total_categories = 0  # Общее количество категорий
@@ -41,6 +41,12 @@ class Category:
     def __repr__(self) -> str:
         return f"Category('{self.name}', товаров: {len(self.__products)})"
 
+
+    def __str__(self) -> str:
+        total_quantity = sum(product.quantity for product in self.__products)
+        return f"{self.name}, количество продуктов: {total_quantity} шт."
+
+
     @property
     def products(self) -> List[Product]:
         return self.__products
@@ -48,3 +54,4 @@ class Category:
     @products.setter
     def products(self, value: List[Product]) -> None:
         self.__products = value
+
