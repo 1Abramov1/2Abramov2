@@ -66,6 +66,21 @@ class TestProductPrice(unittest.TestCase):
         self.product.price = 120.0
         self.assertEqual(self.product.price, 120.0)
 
+    def test_add_two_products(self) -> None:
+        """Тест сложения двух товаров."""
+        product1 = Product("Тестовый товар1", "серый", 10000, 2)  # цена 10000, количество 2
+        product2 = Product("Тестовый товар2", "желтый", 30000, 3)  # цена 30, количество 3
+        total = product1 + product2
+        self.assertEqual(total, 10000 * 2 + 30000 * 3)
+
+    def test_add_with_different_types_prices(self) -> None:
+        """Тест сложения товаров с разными типами цен (int и float)."""
+        product1 = Product("Тестовый товар1", "черный", 30.5, 2)  # цена float
+        product2 = Product("Тестовый товар2", "желтый", 10,3)  # цена int
+        total = product1 + product2
+        self.assertAlmostEqual(total, 30.5 * 2 + 10 * 3)
+
+
 
 if __name__ == "__main__":
     unittest.main()

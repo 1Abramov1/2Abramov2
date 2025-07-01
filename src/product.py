@@ -14,6 +14,19 @@ class Product:
     def __repr__(self) -> str:
         return f"Product('{self.name}', {self.__price} руб., {self.quantity} шт.)"
 
+    def __str__(self) -> str:
+        return f"{self.name}, {int(self.price)} руб. Остаток: {self.quantity} шт."
+
+    def __add__(self, other: 'Product') -> float:
+
+        """Перегрузка оператора сложения для вычисления общей стоимости товаров."""
+
+        if not isinstance(other, Product):
+            raise TypeError("Можно складывать только объекты класса Product")
+
+        return self.price * self.quantity + other.price * other.quantity
+
+
     @property
     def price(self) -> float:
         """Геттер для цены"""
