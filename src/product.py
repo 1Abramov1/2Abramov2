@@ -1,6 +1,6 @@
 from typing import List, TypeVar, Type, Any
 
-T = TypeVar('T', bound='Product')  # Предполагается, что это метод класса Product
+T = TypeVar("T", bound="Product")  # Предполагается, что это метод класса Product
 
 
 class Product:
