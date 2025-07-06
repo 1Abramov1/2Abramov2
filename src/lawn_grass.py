@@ -13,6 +13,3 @@ class LawnGrass(Product):
     def __repr__(self) -> str:
         return (f"Product('{self.name}', {self.price} руб., {self.quantity} шт., {self.country} "
                 f"Страна., {self.germination_period} Период прорастания., {self.color} Цвет)")
-
-
-
