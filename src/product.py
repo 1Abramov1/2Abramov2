@@ -1,4 +1,7 @@
-from typing import List, TypeVar, Type, Any
+from typing import Any
+from typing import List
+from typing import Type
+from typing import TypeVar
 
 T = TypeVar("T", bound="Product")  # Предполагается, что это метод класса Product
 

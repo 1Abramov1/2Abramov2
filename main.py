@@ -1,4 +1,6 @@
 from src.utils import load_data_from_json, Category, Product
+from src.smart_phone import Smartphone
+from src.lawn_grass import LawnGrass
 
 if __name__ == "__main__":
     # Загружаем категории и товары из JSON
@@ -61,3 +63,19 @@ if __name__ == "__main__":
     # 7. Подсчёт уникальных товаров (альтернативный способ)
     total_unique_products = sum(category.count_unique_products() for category in categories)
     print(f"Всего уникальных товаров: {total_unique_products}")
+
+    # 8. Сложение товаров одного вида Smartphone.
+    smartphone1 = Smartphone("iPhone", "Good phone", 1000, 10, "High", "13 Pro", 256, "Black")
+    smartphone2 = Smartphone("Samsung", "Android phone", 800, 5, "Medium", "S21", 128, "White")
+
+    smartphone_sum = smartphone1 + smartphone2
+    print(smartphone_sum)
+
+    # 8. Сложение товаров одного вида LawnGrass.
+
+    grass1 = LawnGrass("Газонная трава", "Элитная трава для газона", 500.0, 20, "Россия","7 дней", "Зеленый" )
+    grass2 = LawnGrass("Газонная трава 2", "Выносливая трава", 450.0, 15, "США", "5 дней", "Темно-зеленый")
+
+    grass_sum = grass1 + grass2
+    print(grass_sum)
+
