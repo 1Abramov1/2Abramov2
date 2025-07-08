@@ -102,3 +102,28 @@ def test_add_product_invalid_type(empty_category: Category, invalid_value: Any) 
 
     assert "только объекты класса Product" in str(exc_info.value)
     assert len(empty_category.products) == 0
+
+
+class TestCategoryStr:
+    """Тестирование строкового представления категории (__str__)"""
+
+    def test_empty_category(self) -> None:
+        """Категория без продуктов должна показывать 0 товаров"""
+        category = Category("Пустая", "Нет товаров", [])
+        assert str(category) == "Пустая, количество продуктов: 0 шт."
+
+    def test_single_product(self) -> None:
+        """Категория с одним товаром"""
+        product = Product("Телефон", "Смартфон", 50000, 10)
+        category = Category("Электроника", "Гаджеты", [product])
+        assert str(category) == "Электроника, количество продуктов: 10 шт."
+
+    def test_multiple_products(self) -> None:
+        """Категория с несколькими товарами (суммирование quantity)"""
+        products = [
+            Product("Товар 1", "Описание 1", 100, 5),
+            Product("Товар 2", "Описание 2", 200, 3),
+            Product("Товар 3", "Описание 3", 300, 2)
+        ]
+        category = Category("Техника", "Разное", products)
+        assert str(category) == "Техника, количество продуктов: 10 шт."  # 5 + 3 + 2
