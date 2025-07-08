@@ -1,8 +1,10 @@
+from typing import List
+from typing import TypeVar
+
 from src.product import Product
-from typing import List, TypeVar
 
 # Предположим, что Product - это класс продукта
-T = TypeVar('T', bound='Product')
+T = TypeVar("T", bound="Product")
 
 
 class Category:
@@ -43,7 +45,8 @@ class Category:
 
 
     def __str__(self) -> str:
-        return f"{self.name}, количество продуктов: {len(self.__products)} шт."
+        total_quantity = sum(product.quantity for product in self.__products)
+        return f"{self.name}, количество продуктов: {total_quantity} шт."
 
 
     @property
