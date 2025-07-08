@@ -1,4 +1,6 @@
 from src.utils import load_data_from_json, Category, Product
+from src.lawn_grass import LawnGrass
+from src.smart_phone import Smartphone
 
 if __name__ == "__main__":
     # Загружаем категории и товары из JSON
