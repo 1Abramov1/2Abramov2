@@ -4,9 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e979a859-e269-4892-8723-af269a1ae029" name="Changes" comment="">
+    <list default="true" id="22568a67-7c62-4d0d-9f47-6d03a0542004" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.coverage" beforeDir="false" afterPath="$PROJECT_DIR$/.coverage" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmlcov/class_index.html" beforeDir="false" afterPath="$PROJECT_DIR$/htmlcov/class_index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmlcov/function_index.html" beforeDir="false" afterPath="$PROJECT_DIR$/htmlcov/function_index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmlcov/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/htmlcov/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmlcov/status.json" beforeDir="false" afterPath="$PROJECT_DIR$/htmlcov/status.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmlcov/z_145eef247bfb46b6___init___py.html" beforeDir="false" afterPath="$PROJECT_DIR$/htmlcov/z_145eef247bfb46b6___init___py.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmlcov/z_145eef247bfb46b6_category_py.html" beforeDir="false" afterPath="$PROJECT_DIR$/htmlcov/z_145eef247bfb46b6_category_py.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmlcov/z_145eef247bfb46b6_lawn_grass_py.html" beforeDir="false" afterPath="$PROJECT_DIR$/htmlcov/z_145eef247bfb46b6_lawn_grass_py.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmlcov/z_145eef247bfb46b6_product_py.html" beforeDir="false" afterPath="$PROJECT_DIR$/htmlcov/z_145eef247bfb46b6_product_py.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmlcov/z_145eef247bfb46b6_smart_phone_py.html" beforeDir="false" afterPath="$PROJECT_DIR$/htmlcov/z_145eef247bfb46b6_smart_phone_py.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmlcov/z_145eef247bfb46b6_utils_py.html" beforeDir="false" afterPath="$PROJECT_DIR$/htmlcov/z_145eef247bfb46b6_utils_py.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lawn_grass.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/lawn_grass.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/product.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/product.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_product.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_product.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,104 +51,44 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python tests.Python tests for test_product.TestProductPrice.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_product.TestProductPrice.test_price_getter.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_utils.TestLoadDataFromJson.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_utils.TestLoadDataFromJson.test_load_data_from_json_single_category_single_product.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests in test_product.py.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests in test_utils.py.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.pytest for test_category.test_add_product_error_message.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.pytest for test_category.test_add_product_invalid_type.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.pytest for test_category.test_add_product_to_empty_category.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.pytest for test_category.test_add_product_to_non_empty_category.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.pytest for test_category.test_price_property_reflects_private_attr_change.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.pytest for test_category.test_products_property_getter.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.pytest for test_category.test_products_property_returns_copy.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.pytest for test_category.test_products_property_returns_original.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.pytest for test_category.test_sample_product.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.pytest in test_category.py.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.pytest in test_product.py.executor&quot;: &quot;Run&quot;,
-    &quot;Python.main.executor&quot;: &quot;Run&quot;,
-    &quot;Python.test_category.executor&quot;: &quot;Run&quot;,
-    &quot;Python.utils.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;feature/homework__16__1&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/New_Alexs/PycharmProjects/PythonProject2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python tests.Python tests for test_product.TestProductPrice.executor": "Run",
+    "Python tests.Python tests for test_product.TestProductPrice.test_price_getter.executor": "Run",
+    "Python tests.Python tests for test_utils.TestLoadDataFromJson.executor": "Run",
+    "Python tests.Python tests for test_utils.TestLoadDataFromJson.test_load_data_from_json_single_category_single_product.executor": "Run",
+    "Python tests.Python tests in test_product.py.executor": "Run",
+    "Python tests.Python tests in test_utils.py.executor": "Run",
+    "Python tests.pytest for test_category.test_add_product_error_message.executor": "Run",
+    "Python tests.pytest for test_category.test_add_product_invalid_type.executor": "Run",
+    "Python tests.pytest for test_category.test_add_product_to_empty_category.executor": "Run",
+    "Python tests.pytest for test_category.test_add_product_to_non_empty_category.executor": "Run",
+    "Python tests.pytest for test_category.test_price_property_reflects_private_attr_change.executor": "Run",
+    "Python tests.pytest for test_category.test_products_property_getter.executor": "Run",
+    "Python tests.pytest for test_category.test_products_property_returns_copy.executor": "Run",
+    "Python tests.pytest for test_category.test_products_property_returns_original.executor": "Run",
+    "Python tests.pytest for test_category.test_sample_product.executor": "Run",
+    "Python tests.pytest for test_product.TestMixinLogAndBaseProduct.executor": "Run",
+    "Python tests.pytest for test_product.TestMixinLogAndBaseProduct.test_add_method.executor": "Run",
+    "Python tests.pytest for test_product.TestMixinLogAndBaseProduct.test_base_product_abstract_method.executor": "Run",
+    "Python tests.pytest for test_product.TestMixinLogAndBaseProduct.test_mixin_log_creation.executor": "Run",
+    "Python tests.pytest for test_product.TestMixinLogAndBaseProduct.test_new_product_classmethod.executor": "Run",
+    "Python tests.pytest for test_product.TestProductPrice.test_add_two_products.executor": "Run",
+    "Python tests.pytest for test_product.TestProductPrice.test_add_with_different_types_prices.executor": "Run",
+    "Python tests.pytest in test_category.py.executor": "Run",
+    "Python tests.pytest in test_product.py.executor": "Run",
+    "Python.main.executor": "Run",
+    "Python.test_category.executor": "Run",
+    "Python.utils.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "feature/homework__16__2",
+    "last_opened_file_path": "C:/Users/New_Alexs/PycharmProjects/PythonProject2",
+    "settings.editor.selected.configurable": "preferences.keymap"
   }
-}</component>
-  <component name="RunManager" selected="Python.main">
-    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="PythonProject2" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Python tests for test_utils.TestLoadDataFromJson" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
-      <module name="PythonProject2" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_utils.TestLoadDataFromJson&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Python tests for test_utils.TestLoadDataFromJson.test_load_data_from_json_single_category_single_product" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
-      <module name="PythonProject2" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_utils.TestLoadDataFromJson.test_load_data_from_json_single_category_single_product&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Python tests in test_utils.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
-      <module name="PythonProject2" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/test_utils.py&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="pytest for test_category.test_products_property_returns_original" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+}]]></component>
+  <component name="RunManager" selected="Python tests.pytest for test_product.TestMixinLogAndBaseProduct.test_add_method">
+    <configuration name="pytest for test_product.TestMixinLogAndBaseProduct.test_add_method" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="PythonProject2" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -147,17 +101,85 @@
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_parameters" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_category.test_products_property_returns_original&quot;" />
+      <option name="_new_target" value="&quot;test_product.TestMixinLogAndBaseProduct.test_add_method&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest for test_product.TestMixinLogAndBaseProduct.test_base_product_abstract_method" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="PythonProject2" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_product.TestMixinLogAndBaseProduct.test_base_product_abstract_method&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest for test_product.TestMixinLogAndBaseProduct.test_mixin_log_creation" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="PythonProject2" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_product.TestMixinLogAndBaseProduct.test_mixin_log_creation&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest for test_product.TestMixinLogAndBaseProduct.test_new_product_classmethod" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="PythonProject2" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_product.TestMixinLogAndBaseProduct.test_new_product_classmethod&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest in test_product.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="PythonProject2" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/test_product.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.main" />
-        <item itemvalue="Python tests.Python tests in test_utils.py" />
-        <item itemvalue="Python tests.Python tests for test_utils.TestLoadDataFromJson.test_load_data_from_json_single_category_single_product" />
-        <item itemvalue="Python tests.Python tests for test_utils.TestLoadDataFromJson" />
-        <item itemvalue="Python.main" />
+        <item itemvalue="Python tests.pytest for test_product.TestMixinLogAndBaseProduct.test_add_method" />
+        <item itemvalue="Python tests.pytest for test_product.TestMixinLogAndBaseProduct.test_new_product_classmethod" />
+        <item itemvalue="Python tests.pytest for test_product.TestMixinLogAndBaseProduct.test_mixin_log_creation" />
+        <item itemvalue="Python tests.pytest in test_product.py" />
+        <item itemvalue="Python tests.pytest for test_product.TestMixinLogAndBaseProduct.test_base_product_abstract_method" />
       </list>
     </recent_temporary>
   </component>
@@ -171,7 +193,7 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="e979a859-e269-4892-8723-af269a1ae029" name="Changes" comment="" />
+      <changelist id="22568a67-7c62-4d0d-9f47-6d03a0542004" name="Changes" comment="" />
       <created>1735159550242</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
