@@ -1,6 +1,9 @@
-from typing import List, TypeVar, Type, Any
+from typing import Any
+from typing import List
+from typing import Type
+from typing import TypeVar
 
-T = TypeVar('T', bound='Product')  # Предполагается, что это метод класса Product
+T = TypeVar("T", bound="Product")  # Предполагается, что это метод класса Product
 
 
 class Product:
@@ -25,7 +28,6 @@ class Product:
             raise TypeError("Можно складывать только объекты класса Product")
 
         return self.price * self.quantity + other.price * other.quantity
-
 
     @property
     def price(self) -> float:

@@ -1,8 +1,10 @@
+from typing import List
+from typing import TypeVar
+
 from src.product import Product
-from typing import List, TypeVar
 
 # Предположим, что Product - это класс продукта
-T = TypeVar('T', bound='Product')
+T = TypeVar("T", bound="Product")
 
 
 class Category:

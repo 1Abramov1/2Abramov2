@@ -72,12 +72,7 @@ def test_products_property_returns_original(category_with_products: Category) ->
     assert products_reference is original_products, "Геттер должен возвращать оригинальный список"
 
     # Создаем тестовый продукт
-    test_product = Product(
-        name="Тестовый продукт",
-        description="Тестовое описание",
-        price=100.0,
-        quantity=1
-    )
+    test_product = Product(name="Тестовый продукт", description="Тестовое описание", price=100.0, quantity=1)
 
     # Запоминаем исходную длину
     original_length = len(original_products)
