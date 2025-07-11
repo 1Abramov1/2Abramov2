@@ -29,7 +29,6 @@ class Product:
 
         return self.price * self.quantity + other.price * other.quantity
 
-
     @property
     def price(self) -> float:
         """Геттер для цены"""
