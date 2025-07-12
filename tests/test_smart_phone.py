@@ -70,4 +70,3 @@ def test_smartphone_add_success() -> None:
 
     total_quantity = smartphone1 + smartphone2  # Используем оператор + вместо .add()
     assert total_quantity == 15
-

@@ -1,34 +1,62 @@
+import logging
+from abc import ABC
+from abc import abstractmethod
 from typing import Any
 from typing import List
-from typing import Type
+from typing import Type, Set
 from typing import TypeVar
 
-T = TypeVar("T", bound="Product")  # Предполагается, что это метод класса Product
+T = TypeVar("T", bound="Product")
 
 
-class Product:
+class BaseProduct(ABC):
+    """Абстрактный базовый класс"""
+
+    @abstractmethod
+    def get_info(self) -> str:
+        pass
+
+    """Абстрактный метод для получения информации о продукте"""
+
+
+# Настройка логирования
+logging.basicConfig(level=logging.INFO)
+
+
+class MixinLog:
+    _created_objects: Set[Type["MixinLog"]] = set()
+
+    def __init__(self, *args: Any, **kwargs: Any) -> None:
+        if self.__class__ not in MixinLog._created_objects:
+            logging.info(f"Создан объект класса {self.__class__.__name__}")
+            MixinLog._created_objects.add(self.__class__)
+        super().__init__(*args, **kwargs)
+
+
+class Product(MixinLog, BaseProduct):
     def __init__(self, name: str, description: str, price: float, quantity: int):
         """Инициализация продукта. Все параметры обязательны."""
+        super().__init__()
         self.name = name
         self.description = description
         self.__price = price  # Приватный атрибут цены
         self.quantity = quantity
 
     def __repr__(self) -> str:
-        return f"Product('{self.name}', {self.__price} руб., {self.quantity} шт.)"
+        return f"Product('{self.name}', {self.price} руб., {self.quantity} шт.)"
 
     def __str__(self) -> str:
         return f"{self.name}, {int(self.price)} руб. Остаток: {self.quantity} шт."
 
-    def __add__(self, other: 'Product') -> float:
+    def get_info(self) -> str:
+        """Реализация абстрактного метода"""
+        return f"{self.name}, цена: {self.price} руб."
 
+    def add(self, other: "Product") -> float:
         """Перегрузка оператора сложения для вычисления общей стоимости товаров."""
-
         if not isinstance(other, Product):
             raise TypeError("Можно складывать только объекты класса Product")
-
         return self.price * self.quantity + other.price * other.quantity
-
 
     @property
     def price(self) -> float:
@@ -43,7 +71,7 @@ class Product:
             return
 
         # Дополнительная проверка для понижения цены
-        if new_price < self.__price:
+        if hasattr(self, "_Product__price") and new_price < self.__price:
             answer = input(f"Вы уверены, что хотите понизить цену с {self.__price} до {new_price}? (y/n): ")
             if answer.lower() != "y":
                 print("Изменение цены отменено")
