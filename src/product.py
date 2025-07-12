@@ -1,23 +1,32 @@
-from typing import Any, List, Type, TypeVar
-from abc import ABC, abstractmethod
 import logging
+from abc import ABC
+from abc import abstractmethod
+from typing import Any
+from typing import List
+from typing import Type, Set
+from typing import TypeVar
 
 T = TypeVar("T", bound="Product")
 
 
 class BaseProduct(ABC):
     """Абстрактный базовый класс"""
+
     @abstractmethod
     def get_info(self) -> str:
         pass
 
+    """Абстрактный метод для получения информации о продукте"""
+
+
 # Настройка логирования
 logging.basicConfig(level=logging.INFO)
 
-class MixinLog:
-    _created_objects = set()
 
-    def __init__(self, *args, **kwargs):
+class MixinLog:
+    _created_objects: Set[Type["MixinLog"]] = set()
+
+    def __init__(self, *args: Any, **kwargs: Any) -> None:
         if self.__class__ not in MixinLog._created_objects:
             logging.info(f"Создан объект класса {self.__class__.__name__}")
             MixinLog._created_objects.add(self.__class__)
@@ -43,7 +52,7 @@ class Product(MixinLog, BaseProduct):
         """Реализация абстрактного метода"""
         return f"{self.name}, цена: {self.price} руб."
 
-    def add(self, other: 'Product') -> float:
+    def add(self, other: "Product") -> float:
         """Перегрузка оператора сложения для вычисления общей стоимости товаров."""
         if not isinstance(other, Product):
             raise TypeError("Можно складывать только объекты класса Product")
@@ -62,7 +71,7 @@ class Product(MixinLog, BaseProduct):
             return
 
         # Дополнительная проверка для понижения цены
-        if hasattr(self, '_Product__price') and new_price < self.__price:
+        if hasattr(self, "_Product__price") and new_price < self.__price:
             answer = input(f"Вы уверены, что хотите понизить цену с {self.__price} до {new_price}? (y/n): ")
             if answer.lower() != "y":
                 print("Изменение цены отменено")

@@ -123,7 +123,7 @@ class TestCategoryStr:
         products = [
             Product("Товар 1", "Описание 1", 100, 5),
             Product("Товар 2", "Описание 2", 200, 3),
-            Product("Товар 3", "Описание 3", 300, 2)
+            Product("Товар 3", "Описание 3", 300, 2),
         ]
         category = Category("Техника", "Разное", products)
         assert str(category) == "Техника, количество продуктов: 10 шт."  # 5 + 3 + 2
