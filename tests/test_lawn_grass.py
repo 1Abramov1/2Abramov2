@@ -1,5 +1,3 @@
-import pytest
-
 from src.lawn_grass import LawnGrass
 from src.product import Product
 

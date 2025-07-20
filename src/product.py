@@ -3,7 +3,8 @@ from abc import ABC
 from abc import abstractmethod
 from typing import Any
 from typing import List
-from typing import Type, Set
+from typing import Set
+from typing import Type
 from typing import TypeVar
 
 T = TypeVar("T", bound="Product")
@@ -14,9 +15,8 @@ class BaseProduct(ABC):
 
     @abstractmethod
     def get_info(self) -> str:
+        """Абстрактный метод для получения информации о продукте"""
         pass
-
-    """Абстрактный метод для получения информации о продукте"""
 
 
 # Настройка логирования
@@ -36,6 +36,9 @@ class MixinLog:
 class Product(MixinLog, BaseProduct):
     def __init__(self, name: str, description: str, price: float, quantity: int):
         """Инициализация продукта. Все параметры обязательны."""
+        if quantity <= 0:
+            raise ValueError("Товар с нулевым количеством не может быть добавлен")
+
         super().__init__()
         self.name = name
         self.description = description
