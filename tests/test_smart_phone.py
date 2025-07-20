@@ -1,6 +1,3 @@
-import pytest
-
-from src.product import Product
 from src.smart_phone import Smartphone
 
 
